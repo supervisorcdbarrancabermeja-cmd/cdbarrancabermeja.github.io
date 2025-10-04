@@ -207,3 +207,50 @@ body {
     margin-top: 1.5rem;
   }
 }
+
+
+/* cecion del agg lo pilarez
+
+
+/* ===== BLOQUES DEL PILAR ===== */
+.bloques {
+  padding: 3rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.bloques h2 {
+  color: #3a1f04;
+  font-size: 2rem;
+}
+
+.bloques h2 span {
+  color: #d09a42;
+}
+
+.tarjetas-bloques {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.2rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+.tarjeta-bloque {
+  display: block;
+  background: #f4f4f4;
+  padding: 1.2rem;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #3a1f04;
+  font-weight: 600;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.tarjeta-bloque:hover {
+  background-color: #ffb74d;
+  color: white;
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
