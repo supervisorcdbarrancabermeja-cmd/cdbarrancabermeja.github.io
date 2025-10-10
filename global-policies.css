@@ -394,3 +394,188 @@ body {
     max-height: 300px;
   }
 }
+
+
+
+
+
+
+
+/* tablas de HC */
+/* ===== ANÁLISIS DE CAPACITACIÓN ===== */
+.analisis-capacitacion {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid #e0e0e0;
+}
+
+.analisis-capacitacion h4 {
+  color: #3a1f04;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  border-left: 5px solid #d09a42;
+  padding-left: 10px;
+}
+
+/* Contenedor de tabla */
+.tabla-contenedor {
+  overflow-x: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 1.5rem;
+}
+
+/* Tabla principal */
+.tabla-capacitacion {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  font-size: 1rem;
+}
+
+.tabla-capacitacion thead {
+  background: linear-gradient(135deg, #3a1f04, #d09a42);
+  color: white;
+}
+
+.tabla-capacitacion th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.tabla-capacitacion tbody tr {
+  border-bottom: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.tabla-capacitacion tbody tr:hover {
+  background-color: #fffbf0;
+  transform: scale(1.01);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.tabla-capacitacion td {
+  padding: 1rem;
+  color: #333;
+}
+
+.tabla-capacitacion .indicador {
+  font-weight: 600;
+  color: #3a1f04;
+}
+
+.tabla-capacitacion .numero {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #d09a42;
+}
+
+/* Columna de cumplimiento */
+.cumplimiento {
+  text-align: center;
+}
+
+.cumplimiento.excelente {
+  background: linear-gradient(135deg, #4caf50, #81c784);
+  color: white;
+  border-radius: 8px;
+}
+
+.porcentaje {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.rating {
+  display: block;
+  font-size: 0.95rem;
+  opacity: 0.95;
+}
+
+/* Tarjetas resumen */
+.tabla-resumen {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.resumen-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.2rem 1.8rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  flex: 1 1 150px;
+  transition: all 0.3s ease;
+  border: 2px solid #e0e0e0;
+}
+
+.resumen-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.resumen-card.destacado {
+  background: linear-gradient(135deg, #ffeb3b, #ffb74d);
+  border-color: #d09a42;
+}
+
+.resumen-label {
+  display: block;
+  font-size: 0.85rem;
+  color: #757575;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.resumen-card.destacado .resumen-label {
+  color: #3a1f04;
+}
+
+.resumen-valor {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3a1f04;
+}
+
+.resumen-card.destacado .resumen-valor {
+  color: #3a1f04;
+  font-size: 2.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tabla-capacitacion {
+    font-size: 0.85rem;
+  }
+  
+  .tabla-capacitacion th,
+  .tabla-capacitacion td {
+    padding: 0.7rem 0.5rem;
+  }
+  
+  .tabla-capacitacion .numero {
+    font-size: 1.1rem;
+  }
+  
+  .porcentaje {
+    font-size: 1.2rem;
+  }
+  
+  .resumen-valor {
+    font-size: 1.5rem;
+  }
+}
+
+/*---------*/
