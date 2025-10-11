@@ -579,3 +579,94 @@ body {
 }
 
 /*---------*/
+
+
+
+
+
+
+
+
+
+/*---------*/
+
+/* ===== ANÁLISIS DE ENCUESTA ===== */
+.analisis-encuesta {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid #e0e0e0;
+}
+
+.analisis-encuesta h4 {
+  color: #3a1f04;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  border-left: 5px solid #d09a42;
+  padding-left: 10px;
+}
+
+/* Carrusel de encuestas (5 imágenes) */
+.carousel-encuesta {
+  margin-bottom: 2rem;
+}
+
+.carousel-encuesta-images {
+  width: 500%;
+}
+
+.carousel-encuesta .carousel-item {
+  flex: 0 0 20%;
+  width: 20%;
+}
+
+/* Estados activos del carrusel de encuestas */
+#enc1:checked ~ .carousel-encuesta-images {
+  transform: translateX(0%);
+}
+
+#enc2:checked ~ .carousel-encuesta-images {
+  transform: translateX(-20%);
+}
+
+#enc3:checked ~ .carousel-encuesta-images {
+  transform: translateX(-40%);
+}
+
+#enc4:checked ~ .carousel-encuesta-images {
+  transform: translateX(-60%);
+}
+
+#enc5:checked ~ .carousel-encuesta-images {
+  transform: translateX(-80%);
+}
+
+/* Punto activo del carrusel de encuestas */
+#enc1:checked ~ .carousel-controls label[for="enc1"],
+#enc2:checked ~ .carousel-controls label[for="enc2"],
+#enc3:checked ~ .carousel-controls label[for="enc3"],
+#enc4:checked ~ .carousel-controls label[for="enc4"],
+#enc5:checked ~ .carousel-controls label[for="enc5"] {
+  background-color: #d09a42;
+  transform: scale(1.3);
+}
+
+/* Texto de análisis */
+.texto-analisis {
+  background: linear-gradient(135deg, #fffbf0, #fff8e1);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 5px solid #d09a42;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.texto-analisis p {
+  color: #333;
+  line-height: 1.8;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.texto-analisis strong {
+  color: #3a1f04;
+  font-weight: 600;
+}
