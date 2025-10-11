@@ -1507,3 +1507,65 @@ body {
     height: 140px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+/* === VIDEO DE REFUERZO === */
+.video-politicas {
+  margin-top: 3rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+}
+
+.video-politicas h4 {
+  color: #7a1212;
+  margin-bottom: 1rem;
+  border-left: 5px solid #d09a42;
+  padding-left: 0.8rem;
+}
+
+.intro-video {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.video-contenedor {
+  position: relative;
+  padding-bottom: 56.25%; /* proporción 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.video-contenedor iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .video-politicas {
+    padding: 1.5rem;
+  }
+
+  .intro-video {
+    font-size: 0.95rem;
+  }
+}
+
