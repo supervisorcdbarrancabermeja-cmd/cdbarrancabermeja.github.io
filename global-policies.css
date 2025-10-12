@@ -1464,16 +1464,16 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem; /* menos espacio entre tarjetas */
 }
 
 .extra-item {
   text-align: center;
-  flex: 1 1 300px;
-  max-width: 320px;
+  flex: 1 1 280px;
+  max-width: 300px;
   background-color: #faf8f4;
   border-radius: 10px;
-  padding: 1.5rem;
+  padding: 1rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -1483,10 +1483,11 @@ body {
 }
 
 .extra-item img {
-  width: 180px;
-  height: 180px;
-  object-fit: contain;
+  width: 220px; /* más grande */
+  height: auto; /* mantiene proporciones */
+  object-fit: contain; /* muestra toda la imagen sin recortar */
   margin-bottom: 1rem;
+  border-radius: 8px;
 }
 
 .extra-item h5 {
@@ -1503,10 +1504,23 @@ body {
 /* Responsivo */
 @media (max-width: 768px) {
   .extra-item img {
-    width: 140px;
-    height: 140px;
+    width: 160px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
