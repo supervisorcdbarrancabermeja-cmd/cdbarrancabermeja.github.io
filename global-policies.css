@@ -1835,3 +1835,54 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==== PRESENTACIÓN DE AUDITORÍAS ==== */
+.auditoria-resultados {
+  background: #fff;
+  border-left: 5px solid #c86e37;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.auditoria-titulo {
+  color: #8b2b2b;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.auditoria-titulo i {
+  color: #c86e37;
+}
+
+.auditoria-descripcion {
+  color: #444;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.auditoria-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
